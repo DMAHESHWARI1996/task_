@@ -1,0 +1,112 @@
+
+<style>
+  #a
+  {
+    color:red;
+  }
+  #b
+  {
+    color:#FF6F00;
+  }
+  p
+  {
+    color:#FF6F00;
+  }
+  #c
+  {
+    color:darkgreen;
+  }
+  /* @keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px}
+   
+} */
+</style>
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>ORDERS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+      <ion-card-content>
+      <ion-item id="a">
+          <ion-icon name="bicycle" item-start></ion-icon>
+             <b>On-Going</b>
+            <p id="a">The order has been picked</p>
+          </ion-item>
+    <img src="assets/imgs/download.jpg"/>
+    
+   
+      <ion-list>
+        <ion-item id="b">
+          
+            <ion-icon name="restaurant" item-start></ion-icon>
+               <b>DQ Grill Sandwhich</b>
+              <p>11N. Way St. Marry Church</p>
+            </ion-item>
+        <ion-item id="b">
+          <ion-icon name="calendar" item-start></ion-icon>
+             <b>02:40 PM</b>
+            <p>23 February 2018</p>
+          </ion-item>
+        <ion-item id="b">
+            <ion-icon name="cash" item-start></ion-icon>
+               <b>$ 20.90</b>
+              <p>Paid via Card</p>
+            </ion-item>
+
+            <ion-item>
+              <span item-left style="color:chartreuse;">18 min left</span>
+              <span item-left style="color:chartreuse;">(2.6 mi)</span>
+              <button id="a" ion-button icon-left clear item-end (click)="openFirstPage()">
+                <ion-icon name="navigate"></ion-icon>
+                Track
+              </button>
+            </ion-item>
+        
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+  
+
+  <ion-card>
+      <ion-card-content>
+      <ion-item>
+          <ion-icon id="c" name="flag" item-start></ion-icon>
+             <b id="c">Completed</b>
+            <p id="c">The order has been delivered.</p>
+          </ion-item>
+    <img src="assets/imgs/food.jpg"/>
+    
+   
+      <ion-list>
+        <ion-item id="b">
+          
+            <ion-icon name="restaurant" item-start></ion-icon>
+               <b>Italian Grill Frappe</b>
+              <p>12,Stephen Road, Ring Road</p>
+            </ion-item>
+        <ion-item id="b">
+          <ion-icon name="calendar" item-start></ion-icon>
+             <b>01:12 PM</b>
+            <p>21 December 2018</p>
+          </ion-item>
+        <ion-item id="b">
+            <ion-icon name="cash" item-start></ion-icon>
+               <b>$ 15.20</b>
+              <p>Paid via Cash</p>
+            </ion-item>
+
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
