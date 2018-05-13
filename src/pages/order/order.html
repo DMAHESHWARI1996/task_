@@ -1,0 +1,97 @@
+<!--
+  Generated template for the OrderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ORDER</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background-color:#f4f4f4">
+  <ion-searchbar
+  [(ngModel)]="myInput"></ion-searchbar>
+  <ion-card *ngFor="let data of datas0">
+    <ion-card-header>
+      <ion-row justify-content-between>
+        <ion-col col-auto>
+          <img src="{{data.img}}" item-left/>
+        </ion-col>
+        <ion-col>
+          <ion-row text-wrap style="text-align:left">
+            <b>{{data.dish}}</b>
+          </ion-row>
+          <ion-row text-wrap>
+            <br>
+            <ion-icon name="pin"></ion-icon>
+            <p>&nbsp;"{{data.loc}}"</p>
+            
+          </ion-row>
+          <ion-row>
+            <p style="color:#FF6F00"><s>{{data.price}}  </s></p>
+            <p style="font-size:18px" style="color:	#008000">&nbsp;&nbsp;{{data.price}}  </p>
+          </ion-row>
+          <ion-row></ion-row>
+          <ion-row>
+            <button ion-button small color="oran" (click)="addToCart(data)">Order</button>
+          </ion-row>
+           </ion-col>
+      </ion-row>
+      
+    </ion-card-header>
+  </ion-card>
+
+  <!-- <ion-card>
+    <ion-card-header>
+      <ion-row justify-content-between>
+        <ion-col col-auto>
+          <img src="../../assets/imgs/download (1).jpg" item-left/>
+        </ion-col>
+        <ion-col>
+          <ion-row text-wrap>
+            <b>Veg. Gujrati khandvi</b>
+          </ion-row>
+          <ion-row text-wrap>
+            <ion-icon name="pin"></ion-icon>
+            <p>&nbsp;Downtown</p>
+            
+          </ion-row>
+          <ion-row>
+            <p style="color:#FF6F00"><s>$37.00   </s></p>
+            <p style="font-size:18px" style="color:	#008000">&nbsp;&nbsp;$37.00</p>
+          </ion-row>
+          </ion-col>
+      </ion-row>
+    </ion-card-header>
+  </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-row justify-content-between>
+          <ion-col col-auto>
+            <img src="../../assets/imgs/download (1).jpg" item-left/>
+          </ion-col>
+          <ion-col>
+            <ion-row text-wrap>
+              <b>Garlic Bread Spagette</b>
+            </ion-row>
+            <ion-row text-wrap>
+                <ion-icon name="pin"></ion-icon>
+              <p>&nbsp;China Town</p>
+            </ion-row>
+            <ion-row>
+              <p style="color:#FF6F00"><s>$37.00   </s></p>
+              <p style="font-size:18px" style="color:	#008000">&nbsp;&nbsp;$37.00</p>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+    </ion-card>
+  -->
+</ion-content>
+
